@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header wrapper">
+        <img class="header_logo" src="img/Logo.svg" alt="Logo">
+        <button class="header_button"><img src="img/3.svg" alt="button"></button>
+    </header>
+    <main>
+        <form method="post" action="//httpbin.org/post">
+        <fieldset>
+            <legend >Личная информация</legend>
+        <label for="name">
+            Введите ваше имя*
+        </label>
+        <input required id="name" type="text" name="name" placeholder="Имя">
+        <label for="birthday">
+            Дата рождения*
+        </label>
+            <input required id="birthday" type="date" placeholder="Дата рождения">
+        <label for="male">
+            Мужской
+        </label>
+            <input checked id="gender" type="radio" value="Мужской">
+            <label for="female">
+            Женский
+            </label>
+            <input id="gender" type="radio" value="Женский">
+        </fieldset>
+        <fieldset><legend>Контактные данные</legend>
+            <label for="password">
+                Ваш пароль*
+                <label>
+                <input required id="password" type="password" placeholder="Пароль">
+            <label for ="email">
+                Ваша почта
+            </label>
+                <input required id="email" type="email" placeholder="Почта">
+            <label for="phone">
+                Ваш телефон
+            </label>
+                <input id="phone" type="tel" placeholder="Телефон"> 
+            <label for="time">
+                Удобный интервал времени
+            </label>
+             <label for="time1">
+                Утро
+             </label>
+                <input id="time1" type="radio" value="Утро">
+                <label for="time2">
+                    День
+                </label>
+                <input id="time2" type="radio" value="День">
+                <label for="time3">
+                Вечер
+            </label>
+                <input id="time3" type="radio" value="Вечер">
+                <label for="time4">
+                    Ночь
+                </label>
+                <input id="time4" type="radio" value="Ночь">
+        </fieldset>
+        <button type="submit">Регистрация</button>
+        <button type="reset">Сброс данных</button>
+        </form>
+    </main>
+    <footer class="footer wrapper">
+        <p class="footer_text"> Адрес - Москва, Степана Разина 119</p>
+        <a class="footer_text" href="tel:7 982 658 25 85">Телефон +7 982 658 25 85</a>
+        <p class="footer_text">ТОО Консалтинговая Компания</p>
+        <p class="footer_text"> Financial - Tax Analytics</p>
+        <p class="footer_text"> БИН 181 040 010 133</p>
+        <p class="footer_text"> Юридический адрес: г.Астана, пр. Мангілік Ел,19, к 304</p>
+        <p class="footer_text"> Почтовый адрес: г Астана, ул.Кордай,2,кв.60</p>
+        <p class="footer_text"> ИИК KZ76 9650 3F00 0817 5335></p>
+        <p class="footer_text"> БИК lRTYKZKA в AO ForbeBank</p>
+        <a class="footer_text" href="tel:7 778 775 77 68">мобильный/ватсап + 7 778 775 77 68</a>
+        <a class="footer_text" href="mailto:info@fintax.kz">info@fintax.kz</a>
+    </footer>
+</body>
+</html>
