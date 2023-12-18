@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
     <title>Document</title>
 </head>
 <body>
@@ -23,14 +24,18 @@
             Дата рождения*
         </label>
             <input required id="birthday" type="date" placeholder="Дата рождения">
+            <div class="form-radio">
         <label for="male">
             Мужской
         </label>
             <input checked id="gender" type="radio" value="Мужской">
+            </div>
+            <div class="form-radio">
             <label for="female">
             Женский
             </label>
             <input id="gender" type="radio" value="Женский">
+            </div>
         </fieldset>
         <fieldset><legend>Контактные данные</legend>
             <label for="password">
@@ -45,25 +50,35 @@
                 Ваш телефон
             </label>
                 <input id="phone" type="tel" placeholder="Телефон"> 
+                <div class="form-radio">
             <label for="time">
                 Удобный интервал времени
             </label>
+                </div>
+                <div class="form-radio">
              <label for="time1">
                 Утро
              </label>
                 <input id="time1" type="radio" value="Утро">
+                </div>
+                <div class="form-radio">
                 <label for="time2">
-                    День
+                День
                 </label>
                 <input id="time2" type="radio" value="День">
+                </div>
+                <div class="form-radio">
                 <label for="time3">
                 Вечер
             </label>
                 <input id="time3" type="radio" value="Вечер">
+                </div>
+                <div class="form-radio">
                 <label for="time4">
-                    Ночь
+                Ночь
                 </label>
                 <input id="time4" type="radio" value="Ночь">
+                </div>
         </fieldset>
         <button type="submit">Регистрация</button>
         <button type="reset">Сброс данных</button>
@@ -81,6 +96,7 @@
         <p class="footer_text"> БИК lRTYKZKA в AO ForbeBank</p>
         <a class="footer_text" href="tel:7 778 775 77 68">мобильный/ватсап + 7 778 775 77 68</a>
         <a class="footer_text" href="mailto:info@fintax.kz">info@fintax.kz</a>
+        <img class="logo" src="img/footerlogo.jpg">
     </footer>
 </body>
 </html>
