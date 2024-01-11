@@ -4,91 +4,94 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Form</title>
+    <title>Document</title>
 </head>
-<body>   
+<body>
+    
     <header class="header_container">
         <div class="wrapper">
             <img class="header_logo" src="img/Logo.svg" alt="Logo">
-              
+                <button class="header_button"><img src="img/3.svg" alt="button"></button>
             </div>
-            <button class="button"><img src="img/3.svg" alt="button"></button>
         </header>
     <main>
         <div class="wrapper">
-            <form class="post" method="post" action="//httpbin.org/post">
-            <fieldset class="form">
-                <legend class="form-title">Личная информация</legend>
-            <label for="name">
-                Введите ваше имя*
+        <form class="post" method="post" action="//httpbin.org/post">
+        <fieldset class="form">
+            <legend class="form-title">Личная информация</legend>
+        <label for="name">
+            Введите ваше имя*
+        </label>
+        <input class="input" required id="name" type="text" name="name" placeholder="Имя">
+        <label for="birthday">
+            Дата рождения*
+        </label>
+            <input class="input" required id="birthday" type="date" placeholder="Дата рождения">
+            <div class="form-radio">
+        <label for="male">
+            Мужской
+        </label>
+            <input class="input" checked id="gender" type="radio" value="Мужской">
+            </div>
+            <div class="form-radio">
+            <label for="female">
+            Женский
             </label>
-            <input class="input" required id="name" type="text" name="name" placeholder="Имя">
-            <label for="birthday">
-                Дата рождения*
+            <input class="input" id="gender" type="radio" value="Женский">
+            </div>
+        </fieldset>
+        <fieldset class="form"><legend class="form-title">Контактные данные</legend>
+            <label for="password">
+                Ваш пароль*
+                <label>
+                <input class="input" required id="password" type="password" placeholder="Пароль">
+            <label for ="email">
+                Ваша почта
             </label>
-                <input class="input" required id="birthday" type="date" placeholder="Дата рождения">
+                <input class="input" required id="email" type="email" placeholder="Почта">
+            <label for="phone">
+                Ваш телефон
+            </label>
+                <input class="input" id="phone" type="tel" placeholder="Телефон"> 
                 <div class="form-radio">
-            <label for="male">
-                Мужской
+            <label for="time">
+                Удобный интервал времени
             </label>
-                <input class="input" checked id="gender" type="radio" value="Мужской">
                 </div>
                 <div class="form-radio">
-                <label for="female">
-                Женский
-                </label>
-                <input class="input" id="gender" type="radio" value="Женский">
+             <label  for="time1">
+                Утро
+             </label>
+                <inputclass="input" id="time1" type="radio" value="Утро">
                 </div>
-            </fieldset>
-            <fieldset class="form"><legend class="form-title">Контактные данные</legend>
-                <label for="password">
-                    Ваш пароль*
-                    <label>
-                    <input class="input" required id="password" type="password" placeholder="Пароль">
-                <label for ="email">
-                    Ваша почта
+                <div class="form-radio">
+                <label for="time2">
+                День
                 </label>
-                    <input class="input" required id="email" type="email" placeholder="Почта">
-                <label for="phone">
-                    Ваш телефон
+                <input class="input" id="time2" type="radio" value="День">
+                </div>
+                <div class="form-radio">
+                <label for="time3">
+                Вечер
+            </label>
+                <input class="input" id="time3" type="radio" value="Вечер">
+                </div>
+                <div class="form-radio">
+                <label for="time4">
+                Ночь
                 </label>
-                    <input class="input" id="phone" type="tel" placeholder="Телефон"> 
-                    <div class="form-radio">
-                <label for="time">
-                    Удобный интервал времени
-                </label>
-                    </div>
-                    <div class="form-radio">
-                 <label  for="time1">
-                    Утро
-                 </label>
-                    <inputclass="input" id="time1" type="radio" value="Утро">
-                    </div>
-                    <div class="form-radio">
-                    <label for="time2">
-                    День
-                    </label>
-                    <input class="input" id="time2" type="radio" value="День">
-                    </div>
-                    <div class="form-radio">
-                    <label for="time3">
-                    Вечер
-                </label>
-                    <input class="input" id="time3" type="radio" value="Вечер">
-                    </div>
-                    <div class="form-radio">
-                    <label for="time4">
-                    Ночь
-                    </label>
-                    <input class="input" id="time4" type="radio" value="Ночь">
-                    </div>
-            </fieldset>
-            <div class="button_flex">
-            <button class="button1" type="submit">Регистрация</button>
-            <button class="button2" type="reset">Сброс данных</button>
-        </div>
+                <input class="input" id="time4" type="radio" value="Ночь">
+                </div>
+        </fieldset>
+        <div class="button_flex">
+        <button class="button1" type="submit">Регистрация</button>
+        <button class="button2" type="reset">Сброс данных</button>
     </div>
+</div>
+        </form>
+        <div class="background">
         <dl>
+            <div class="wrapper">
             <dt>dl</dt>
             <dd>Элемент "dl" аналогично элементам "ul" и "ol" является внешней обёрткой для
                 элементов списка</dd>
@@ -101,6 +104,7 @@
             <dd>Тегом "dd" верстается определение термина, либо значение в паре «ключ-значение».
                 Следом за этим тегом может идти как ещё один тег "dd" (если у термина несколько
                 определений), так и тег "dt" (следующий термин).</dd>
+            </div>
         </dl>
     <div class = "form-checked">
         <fieldset>
