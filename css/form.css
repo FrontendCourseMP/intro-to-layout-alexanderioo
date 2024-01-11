@@ -22,11 +22,9 @@ dd::before {
     background-color: #9EAF7C;
     border: 1px solid black;}
 .button1{
-    margin-right: 635px;
     background-color: #9EAF7C;
 }
 .button2{
-    margin-right: 150px;
     background-color: #9EAF7C
 }
 .input{
@@ -47,3 +45,26 @@ dd::before {
 .form-title{
 font-size: 2rem;
 }
+.form-title{
+    font-size: 2rem;
+    }
+    .form-container{
+        color: black;
+        font-size:3rem;
+    }
+    .checkmark{
+        margin-left: 30px;
+    }
+    .checkmark::before {
+        content: "";
+        height: 25px;
+        width: 25px;
+        background-color: gray;
+        position: absolute;
+        left:0;
+        top:0;
+    }
+    .Pseudoclass__label:hover .Pseudoclass__input + .checkmark::before {
+        background-color: #22b422;
+        box-shadow: 0 0 5px 1px white
+    }
