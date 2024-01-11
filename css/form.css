@@ -6,7 +6,7 @@
 .header_logo{
     margin:22px
   }
-.header_button {
+.button {
     background: none;
     border: none;
 }
@@ -17,7 +17,8 @@ body{
     transform: rotate(30deg);
     transform: scale(2);
     transform: skew(20deg, 20deg);
-    height: 200px;
+    height: 50px;
+    width: 300px;
 }
 
 
