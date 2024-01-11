@@ -32,12 +32,14 @@ dd::before {
     border: 1px solid bisque;
 }
 .background{
-    background-color: gray;
-    width: 650px;
-    border: 3px solid white;
-    border-radius: 20px;
-    margin: 0 auto;
-}
+        background-color: ghostwhite;
+        width: 650px;
+        border: 3px solid white;
+        border-radius: 20px;
+        margin: 0 auto;
+        box-shadow: 6px 6px 6px 6px;
+        margin-top: 10px;
+    }
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +71,18 @@ font-size: 2rem;
         box-shadow: 0 0 5px 1px white
     }
     .Pseudoelement__input:checked + .checkmark:after {
+        display: block;
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        content: "";
+        position: absolute;
+    }
+    .Pseudoclass__input:checked + .checkmark:after {
         display: block;
         left: 9px;
         top: 5px;
@@ -143,3 +157,48 @@ font-size: 2rem;
     .Pseudoclass__label input {
         display: none
     }
+    .Pseudoclass__label{
+        font-size: 2.5rem;
+        margin-top: 20px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    .Pseudo_text{
+        color:black;
+        font-size: 2.8rem;
+    }
+    .Pseudoelement__title, .Pseudoclass__title{
+        font-size: 3rem;
+    }
+    .text{
+        font-size: 2.8rem;
+    }
+    .button{
+        border: none;
+        background: none;
+    }
+    .button_flex{
+      display: flex;
+      justify-content: center;
+    }
+    .Pseudo_button{
+        display: block;
+            font-family: "Inter";
+            background-color: #9EAF7C;
+            margin: 0 auto;
+            padding: 24px 75px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--third-color);
+            font-size: 1.6rem;
+            width: 300px;
+            border: none;
+    }
+    .logo{
+        transform: rotate(30deg);
+        transform: scale(2);
+        transform: skew(20deg, 20deg);
+        height: 200px;
+    }
+    
