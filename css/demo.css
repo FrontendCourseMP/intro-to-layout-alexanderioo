@@ -17,6 +17,7 @@
 body{
     background: whitesmoke;
 }
+.card_back,
 .card_front{
     transition: transform 0.8s ease-in-out 1s;
     width: 100%;
@@ -31,12 +32,14 @@ body{
 .card_back:hover>.card_front{ 
     transform: perspective(450px) rotateY(-180deg);
 }
-.card_back{
-    margin-top: 20px;
-    position: absolute;
-    width: 120%;
-    overflow: hidden;
-   
+.card_container{
+    margin-top: 50px ;
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
 }
 .card_img{
     object-fit: cover;
