@@ -1,0 +1,22 @@
+.button{
+    border: none;
+    background: none;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #9EAF7C;
+}
+.header_logo{
+    margin:22px
+  }
+.header_button {
+    background: none;
+    border: none;
+}
+body{
+    background: whitesmoke;
+}
+.card_back{
+    transform: perspective(450px) rotateY(165deg);
+}
