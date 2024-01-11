@@ -68,3 +68,35 @@ font-size: 2rem;
         background-color: #22b422;
         box-shadow: 0 0 5px 1px white
     }
+    .Pseudoelement__input:checked + .checkmark:after {
+        display: block;
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        content: "";
+        position: absolute;
+    }
+    .Pseudoclass__input:checked + .checkmark {
+        text-decoration: line-through
+    }
+    .Pseudoclass__input:checked + .checkmark {
+        text-decoration: line-through
+    }
+    .Pseudoclass__label:nth-child(even) {
+        color: #00FFFF;
+    }
+    
+    .Pseudoclass__label:nth-child(odd) {
+        color: orange;
+    }
+    .Pseudoclass__label:nth-child(even) {
+        color: 	#00FFFF;
+    }
+    
+    .Pseudoclass__label:nth-child(odd) {
+        color: orange;
+    }
