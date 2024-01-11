@@ -6,7 +6,7 @@
 .header_logo{
     margin:22px
   }
-.header_button {
+.button {
     background: none;
     border: none;
 }
@@ -197,8 +197,4 @@ grid-column: 1/3;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     grid-area: 1/1/-1/-1;
-}
-.contacts_icon{
-  width: 390px;
-
 }
