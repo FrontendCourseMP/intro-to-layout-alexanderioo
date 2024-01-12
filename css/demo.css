@@ -45,11 +45,23 @@ body{
     right: 159px;
     width: 620px;
 }
+@keyframes marquee_img {
+    0% {
+        transform: translateX(600px);
+    }
 
-
-
-
-
-1111
-
-
+    100% {
+        transform: translateX(-570px);
+    }
+    
+}
+.marquee_container{
+animation: marquee_img 1.5s linear infinite;
+overflow: hidden;
+width: max-content;
+}
+.marquee_img{
+    width: 200px;
+    height: 200px;
+    margin: 75px;
+}
