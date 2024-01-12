@@ -15,7 +15,7 @@ body{
 }
 .card_back,
 .card_front{
-    transition: transform 3s;
+    transition: transform 3s ease-in-out;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -25,10 +25,11 @@ body{
 }
 
 .card_front:hover{ 
-    transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(180deg);
 }
 .card_back{ 
-    transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #fff;
 }
 .card_container{
     margin-top: 50px ;
@@ -44,3 +45,11 @@ body{
     right: 159px;
     width: 620px;
 }
+
+
+
+
+
+1111
+
+
