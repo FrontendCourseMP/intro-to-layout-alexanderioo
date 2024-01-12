@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/necolas.github.io_normalize.css_8.0.1_normalize.css">
     <title>Form</title>
 </head>
 <body>
-    
+    <a class="skip-link" href="#content">skip-link</a>
     <header class="header_container">
         <div class="wrapper">
             <img class="header_logo" src="img/Logo.svg" alt="Logo">    
@@ -17,7 +18,7 @@
     <main>
         <div class="wrapper">
         <form class="post" method="post" action="//httpbin.org/post">
-        <fieldset class="form">
+        <fieldset class="form" id="content"> 
             <legend class="form-title">Личная информация</legend>
         <label for="name">
             Введите ваше имя*
