@@ -17,9 +17,12 @@
 body{
     background: whitesmoke;
 }
+.card_front {
+    background-color: #fff;
+}
 .card_back,
 .card_front{
-    transition: transform 0.8s ease-in-out 1s;
+    transition: transform 1s;
     width: 100%;
     height: 100%;
     border-radius: 15px;
